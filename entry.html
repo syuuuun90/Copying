@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>YeSound.| 高く舞え、私。はばたけ、自分。</title>
+    <!-- ▼favicon -->
+    <link rel="shortcut icon" href="" />
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- JS読み込み -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <header id="entry__header">
+      <div class="entry__header__logo">
+        <img src="/yesund/images/logo.png" alt="aaa" />
+      </div>
+    </header>
+
+    <section class="kv">
+      <div class="kv__img">
+        <picture>
+          <source
+            srcset="/yesund/images/entry/kv-entry-pc.jpg"
+            media="(min-width: 1024px)"
+            type="image/png"
+          />
+          <source
+            srcset="/yesund/images/entry/kv-entry-tablet-heigh.jpg"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
+          <img
+            src="/yesund/images/entry/kv-entry-sp.jpg"
+            alt="”代替テキスト”"
+          />
+        </picture>
+      </div>
+      <!-- <figure class=">
+        <img src="/yesund/images/entry/kv-entry-pc.jpg" alt="" />
+      </figure> -->
+      <h1 class="entry__title">Entry</h1>
+      <div class="page__list">
+        <p class="text__inner">Top　>　Entry</p>
+      </div>
+    </section>
+
+    <section id="entry__contents">
+      <div class="contentsInner">
+        <div class="entry__contentsItem">
+          <div class="entry__contentsItem-list">
+            <img src="/yesund/images/entry/newcareer.jpg" alt="" />
+            <h3>新卒採用</h3>
+          </div>
+          <div class="entry__contentsItem-list">
+            <img src="/yesund/images/entry/midcareer.jpg" alt="" />
+            <h3>中途採用</h3>
+          </div>
+          <div class="entry__contentsItem-list">
+            <img src="/yesund/images/entry/parttime.jpg" alt="" />
+            <h3>パート・アルバイト</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="entry__step">
+      <div class="contentsInner">
+        <div class="entry__stepItem">
+          <div class="entry__stepItem-number">
+            <img
+              class="entry__numbers"
+              src="/yesund/images/entry/step01.png"
+              alt=""
+            />
+            <h3>事前連絡</h3>
+            <div class="entry__stepItem-infoBox">
+              <img
+                class="entry__icons"
+                src="/yesund/images/entry/send.png"
+                alt=""
+              />
+              <p>
+                まずはコンタクトフォームより<br />ご連絡をお願いいたします。
+              </p>
+            </div>
+          </div>
+          <div class="entry__stepItem-number">
+            <img
+              class="entry__numbers"
+              src="/yesund/images/entry/step02.png"
+              alt=""
+            />
+            <h3>カジュアル面談日程の調整</h3>
+            <div class="entry__stepItem-infoBox">
+              <img
+                class="entry__icons"
+                src="/yesund/images/entry/schedule.png"
+                alt=""
+              />
+              <p>
+                こちらからメールにて<br />
+                必要資料と一緒に<br />
+                面談候補日を送ります。
+              </p>
+            </div>
+          </div>
+          <div class="entry__stepItem-number">
+            <img
+              class="entry__numbers"
+              src="/yesund/images/entry/step03.png"
+              alt=""
+            />
+            <h3>カジュアル面談実施</h3>
+            <div class="entry__stepItem-infoBox">
+              <img
+                class="entry__icons"
+                src="/yesund/images/entry/talk.png"
+                alt=""
+              />
+              <p>
+                「気になること」があれば<br />
+                なんでも聞いてください。<br />
+                堅苦しくないカジュアルな<br />
+                面談となります。
+              </p>
+            </div>
+          </div>
+
+          <div class="entry__stepItem-number">
+            <img
+              class="entry__numbers"
+              src="/yesund/images/entry/step04.png"
+              alt=""
+            />
+            <h3>結果の通知</h3>
+            <div class="entry__stepItem-infoBox">
+              <img
+                class="entry__icons"
+                src="/yesund/images/entry/mail.png"
+                alt=""
+              />
+              <p>
+                メールにて、面接の合否の<br />
+                ご連絡を3日以内に<br />
+                入れさせていただきます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sec__title">
+        <h2>Contact</h2>
+        <p>お問い合わせ</p>
+      </div>
+      <form class="contact__form">
+        <div class="contact__formItem">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="例：鈴木花子" />
+        </div>
+        <div class="contact__formItem">
+          <label for="email">メールアドレス</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="例：sample@gmail.com"
+          />
+        </div>
+        <div class="contact__formItem">
+          <label for="phone">電話番号</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="例：090-1234-5678"
+          />
+        </div>
+        <div class="contact__formItem">
+          <label class="" for="message">お問い合わせ内容</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="例：テキストテキストテキスト"
+          ></textarea>
+        </div>
+        <button class="btn btn__bg-white">Send</button>
+      </form>
+    </section>
+
+    <footer id="footer" class="entry__footer">
+      <div class="footer">
+        <div class="footer__logo">
+          <img src="/yesund/images/logo.png" alt="aaa" />
+        </div>
+        <nav class="footer__nav">
+          <ul class="nav__list">
+            <li class="nav__list__item"><a href="#news">News</a></li>
+            <li class="nav__list__item"><a href="#greeting">Greeting</a></li>
+            <li class="nav__list__item"><a href="about">About</a></li>
+            <li class="nav__list__item"><a href="recruit">Recruit</a></li>
+            <li class="nav__list__item"><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p><small>&copy; 2023 YeSound Inc.</small></p>
+    </footer>
+  </body>
+</html>
+<br />

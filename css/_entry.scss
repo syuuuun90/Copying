@@ -1,0 +1,183 @@
+$breakpoints: (
+  "tb": "screen and (max-width: 1024px)",
+  "sp": "screen and (max-width: 768px)",
+) !default;
+
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+#entry {
+  &__header {
+    max-width: 1000px;
+    width: 100vw;
+    margin: auto;
+  }
+}
+.entry {
+  &__header__logo {
+    position: absolute;
+    z-index: 4;
+    width: 150px;
+    margin: 25px 0 0 20px;
+    @include media(tb) {
+      margin: 30px 0 0 60px;
+    }
+    @include media(sp) {
+      margin: 15px 0 0 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    @include media(tb) {
+      font-size: 36px;
+    }
+    @include media(sp) {
+      font-size: 32px;
+    }
+  }
+}
+
+.kv {
+  position: relative;
+  margin: auto;
+}
+.page__list {
+  padding: 12px 0;
+  background-color: #f3aa53;
+}
+.text__inner {
+  color: #fff;
+  max-width: 1000px;
+  margin-left: 15px;
+}
+.contentsInner {
+  max-width: 920px;
+  margin: auto;
+}
+#entry__contents {
+  padding-top: 105px;
+}
+.entry__contents {
+  &Item {
+    display: flex;
+    gap: 45px;
+    @include media(sp) {
+      display: block;
+    }
+    &-list {
+      width: 33%;
+      border-radius: 16px;
+      box-shadow: 4px 4px 4px #00000026;
+      @include media(sp) {
+        width: 75%;
+        margin: 0 auto 25px;
+      }
+      h3 {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 20px;
+        color: #555555;
+      }
+    }
+  }
+}
+
+#entry__step {
+  padding: 130px 0 105px;
+  @include media(sp) {
+    padding: 70px 0 20px;
+  }
+}
+.entry {
+  &__stepItem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    @include media(sp) {
+      display: block;
+    }
+
+    &-number {
+      position: relative;
+      width: 48%;
+      padding: 35px 65px;
+      background-color: #ecf2f5;
+      border-radius: 16px;
+      @include media(sp) {
+        width: 90%;
+        margin: auto;
+        padding: 25px 40px;
+        margin-bottom: 45px;
+      }
+      h3 {
+        padding-top: 40px;
+        font-size: 24px;
+        color: #555555;
+        font-family: Yu Gothic UI;
+        @include media(sp) {
+          padding-top: 17px;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 23.94px;
+          text-align: center;
+        }
+      }
+    }
+    &-infoBox {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-top: 30px;
+      text-align: left;
+
+      @include media(sp) {
+        font-weight: 600;
+        line-height: 18.62px;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 17px;
+      }
+      p {
+        font-family: Yu Gothic UI;
+        color: #555555;
+        line-height: 18.62px;
+      }
+    }
+  }
+
+  &__icons {
+    width: 90px;
+    @include media(sp) {
+      width: 60px;
+    }
+  }
+  &__numbers {
+    width: 50px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.entry__footer {
+  margin-top: 100px;
+  @include media(sp) {
+    margin-top: 50px;
+  }
+}
